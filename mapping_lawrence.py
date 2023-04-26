@@ -6,6 +6,7 @@ import re
 char_df = pd.read_csv('cleaned_watch_text_def.csv')
 pattern = r' \(aka.*\)'
 char_df['Reference'] = char_df['Reference'].apply(lambda x: re.sub(pattern, '', x))
+char_df['Reference'] = char_df['Reference'].str.replace('/', '-')
 
 # Create a new column with the image file names
 char_df['image_file'] = char_df['Reference'].apply(lambda x: f"{x}.jpg")
