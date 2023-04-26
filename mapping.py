@@ -11,7 +11,7 @@ char_df['Reference'] = char_df['Reference'].apply(lambda x: re.sub(pattern, '', 
 char_df['image_file'] = char_df['Reference'].apply(lambda x: f"{x}.jpg")
 
 # Define the directory where the image files are stored
-image_dir = '/Users/lawrencejesudasan/Downloads/Watches_Images'
+image_dir = '/Users/julian/Desktop/Watches_Images'
 
 # Create a dictionary to map the characteristics to the images
 char_to_image = {}
