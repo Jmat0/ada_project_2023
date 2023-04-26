@@ -28,12 +28,5 @@ mapped_df = pd.DataFrame.from_dict(char_to_image, orient='index')
 
 mapped_df.to_csv("data_with_images.csv", index=False)
 
-# Check if the number of files in the image directory matches the number of rows in the characteristics dataset
-#if len(os.listdir(image_dir)) != len(char_df):
-    # Remove the extra rows in the characteristics dataset
-    #char_df = char_df[char_df['Reference'].isin(char_to_image.keys())]
-
-#char_df.to_csv("data_with_images.csv", index=False)
-
 # Print the dictionary to verify the mapping
 print(char_to_image)
