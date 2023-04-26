@@ -401,7 +401,7 @@ Hours, Minutes, Small Seconds, Additional 24 Hour Hand (adjustable) | Date | Ala
 Blancpain,Fifty Fathoms,5015D-1140-52B,Fifty Fathoms Automatique Stainless Steel / Blue / Blue Canvas,"Blancpain caliber 1315
 Hours, Minutes, Seconds | Date",2007,No,"Rotating, 0-60 (Dive)",Sapphire,Closed,Round,45.00 mm,15.50 mm,23.00 mm,300.00 m,,Blue,Guilloche,Mixed,Sword,Stainless Steel,5015D-1140-52B.jpg
 Blancpain,Léman,2926A-5222-55B,Léman Tourbillon White Gold / Serti Baguette,"Blancpain caliber 25A
-Hours, Minutes | Power Reserve Indicator, Tourbillon Escapement",,No,Gem-Set,Sapphire,Open,Round,40.00 mm,12.48 mm,21.00 mm,100.00 m,,Paved,,,Feuille,White Gold,2926A-5222-55B.jpg
+Hours, Minutes | Power Reserve Indicator, Tourbillon Escapement",,No,Gem-Set,Sapphire,Open,Round,40.00 mm,12.48 mm,21.00 mm,100.00 m,,Paved,,None,Feuille,White Gold,2926A-5222-55B.jpg
 Blancpain,Léman,2185F-1130-63,Léman Chronograph Flyback Stainless Steel / Black / Strap,"Blancpain caliber F185
 Hours, Minutes, Small Seconds | Date | Chronograph, Column wheel, Flyback",,No,,Sapphire,Closed,Round,38.00 mm,11.70 mm,22.00 mm,100.00 m,,Black,Sunburst,Arabic Numerals,Dauphine,Stainless Steel,2185F-1130-63.jpg
 Blancpain,Fifty Fathoms,5785F-11D03-63A,Fifty Fathoms Flyback Chronograph Speed Command Orange,"Blancpain caliber F185
@@ -853,7 +853,7 @@ Hours, Minutes, Seconds | Date",2007,No,,Sapphire,Closed,Round,42.10 mm,13.00 mm
 Cartier,Clé de Cartier,WJCL0033,Clé de Cartier 35 Pink Gold / Diamond / Bracelet,"Cartier caliber 1847 MC
 Hours, Minutes, Seconds | Date",2015,No,,Sapphire,Open,Cushion,35.00 mm,10.09 mm,,30.00 m,,Silver,Guilloche,Gem-Set Indexes,Sword,Pink Gold,WJCL0033.jpg
 Cartier,Clé de Cartier,HPI00946,Clé de Cartier 41 Mysterious Hours Palladium / Diamond,"Cartier caliber 9981 MC
-Hours, Minutes",2015,No,Gem-Set,Sapphire,Open,Cushion,41.00 mm,11.25 mm,,30.00 m,,Paved,,,Sword,White Gold,HPI00946.jpg
+Hours, Minutes",2015,No,Gem-Set,Sapphire,Open,Cushion,41.00 mm,11.25 mm,,30.00 m,,Paved,,None,Sword,White Gold,HPI00946.jpg
 Cartier,Clé de Cartier,WGCL0019,Clé de Cartier 40 Pink Gold / Silver,"Cartier caliber 1847 MC
 Hours, Minutes, Seconds | Date",2015,No,,Sapphire,Open,Cushion,40.00 mm,11.76 mm,,30.00 m,,Silver,Guilloche,Roman Numerals,Sword,Pink Gold,WGCL0019.jpg
 Cartier,Clé de Cartier,WJCL0032,Clé de Cartier 35 Pink Gold / Diamond / Purple,"Cartier caliber 1847 MC
@@ -903,7 +903,7 @@ Hours, Minutes",2015,No,,Sapphire,Open,Cushion,41.00 mm,11.45 mm,,30.00 m,,Skele
 Cartier,Ballon Blue de Cartier,W6920083,Ballon Blue de Cartier 40 Extra Flat Pink Gold / Silver,"Cartier caliber 430 MC
 Hours, Minutes",2015,No,,Sapphire,Closed,Round,40.00 mm,6.90 mm,,30.00 m,,Silver,Guilloche,Roman Numerals,Sword,Pink Gold,W6920083.jpg
 Cartier,Ballon Blue de Cartier,WE902049,Ballon Blue de Cartier 42 White Gold / Diamond,"Cartier caliber 049
-Hours, Minutes, Seconds | Date",2007,No,Gem-Set,Sapphire,Closed,Round,42.10 mm,13.00 mm,,30.00 m,,Paved,,,Sword,White Gold,WE902049.jpg
+Hours, Minutes, Seconds | Date",2007,No,Gem-Set,Sapphire,Closed,Round,42.10 mm,13.00 mm,,30.00 m,,Paved,,None,Sword,White Gold,WE902049.jpg
 Cartier,Calibre de Cartier,WGCA0003,Calibre de Cartier 38 Pink Gold / Silver,"Cartier caliber 1904-PS MC
 Hours, Minutes, Small Seconds | Date",2015,No,,Sapphire,Open,Round,38.00 mm,9.26 mm,,30.00 m,,Silver,Guilloche,Roman Numerals,Sword,Pink Gold,WGCA0003.jpg
 Cartier,Santos de Cartier,W2020068,Santos Dumont 38 Date / Power Reserve Pink Gold / Grey,"Cartier caliber 9753 MC
@@ -935,7 +935,7 @@ Hours, Minutes, Small Seconds | Date",2013,No,"Rotating, 0-60 (Dive)",Sapphire,C
 Cartier,Clé de Cartier,W2CL0003,Clé de Cartier 35 Stainless Steel /Pink Gold / Silver / Bracelet,"Cartier caliber 1847 MC
 Hours, Minutes, Seconds | Date",2015,No,,Sapphire,Open,Cushion,35.00 mm,10.09 mm,,30.00 m,,Silver,Guilloche,Roman Numerals,Sword,"Pink Gold, Stainless Steel",W2CL0003.jpg
 Cartier,Clé de Cartier,HPI00937,Clé de Cartier 41 White Gold / Rivière,"Cartier caliber 1847 MC
-Hours, Minutes, Seconds | Date",2015,"Yes, 5 units",Gem-Set,Sapphire,Open,Cushion,41.00 mm,11.76 mm,,30.00 m,,Paved,Guilloche,,Sword,White Gold,HPI00937.jpg
+Hours, Minutes, Seconds | Date",2015,"Yes, 5 units",Gem-Set,Sapphire,Open,Cushion,41.00 mm,11.76 mm,,30.00 m,,Paved,Guilloche,None,Sword,White Gold,HPI00937.jpg
 Cartier,Ballon Blue de Cartier,WGBB0016,Ballon Blue de Cartier 42 Automatic Pink Gold / Silver / Bracelet,"Cartier caliber 049
 Hours, Minutes, Seconds | Date",2007,No,,Sapphire,Closed,Round,42.10 mm,13.00 mm,,30.00 m,,Silver,Guilloche,Roman Numerals,Sword,Pink Gold,WGBB0016.jpg
 Cartier,Santos de Cartier,W20072X7,Santos 100 41.3 Stainless Steel / Yellow Gold,"Cartier caliber 049 No Date
@@ -959,7 +959,7 @@ Hours, Minutes, Small Seconds | Date",2011,No,,Sapphire,Open,Round,42.00 mm,10.0
 Cartier,Calibre de Cartier,W7100044,Calibre de Cartier Chronograph Stainless Pink Gold / Silver,"Cartier caliber 1904-CH MC
 Hours, Minutes, Small Seconds | Date | Chronograph, Column wheel",2012,No,"Rotating, 0-60 (Dive)",Sapphire,Open,Round,42.00 mm,10.00 mm,,100.00 m,,Silver,Guilloche,Mixed,Sword,Pink Gold,W7100044.jpg
 Cartier,Clé de Cartier,HPI00938,Clé de Cartier 41 White Gold / Baguette,"Cartier caliber 1847 MC
-Hours, Minutes, Seconds | Date",2015,"Yes, 20 units",Gem-Set,Sapphire,Open,Cushion,41.00 mm,11.76 mm,,30.00 m,,Paved,Guilloche,,Sword,White Gold,HPI00938.jpg
+Hours, Minutes, Seconds | Date",2015,"Yes, 20 units",Gem-Set,Sapphire,Open,Cushion,41.00 mm,11.76 mm,,30.00 m,,Paved,Guilloche,None,Sword,White Gold,HPI00938.jpg
 Cartier,Ballon Blue de Cartier,W69017Z4,Ballon Blue de Cartier 36 Automatic Stainless Steel / Silver,"Cartier caliber 049 No Date
 Hours, Minutes, Seconds",2007,No,,Sapphire,Closed,Round,36.60 mm,12.05 mm,,30.00 m,,Silver,Guilloche,Roman Numerals,Sword,Stainless Steel,W69017Z4.jpg
 Cartier,Santos de Cartier,W2SA0027,Santos Dumont 31.4 China,"Cartier caliber 430 MC
@@ -1311,7 +1311,7 @@ Hours, Minutes, Small Seconds | Date | Moonphase | Power Reserve Indicator",,No,
 Patek Philippe,Calatrava,6006G-001,Calatrava 6006G,"Patek Philippe caliber 240 PS C
 Hours, Minutes, Small Seconds | Date",2017 - 2020,No,,Sapphire,Open,Round,39.00 mm,,,30.00 m,,Black,Sunburst,Arabic Numerals,Stick,White Gold,6006G-001.jpg
 Patek Philippe,Calatrava,5089G-077,Calatrava 5089 Sheridan Style,"Patek Philippe caliber 240
-Hours, Minutes",2017 - 2015,"Yes, 10 units",,Sapphire,Hunter,Round,38.60 mm,,20.00 mm,30.00 m,,Brown,Guilloche,,Dauphine,Enamel,5089G-077.jpg
+Hours, Minutes",2017 - 2015,"Yes, 10 units",,Sapphire,Hunter,Round,38.60 mm,,20.00 mm,30.00 m,,Brown,Guilloche,None,Dauphine,Enamel,5089G-077.jpg
 Patek Philippe,Grand Complications,6102P-001,Celestial 6102 Platinum / Blue,"Patek Philippe caliber 240 LU CL C
 Hours, Minutes | Date | Moonphase, Sky chart",2012,No,,Sapphire,Open,Round,44.00 mm,10.58 mm,,30.00 m,,,,,Feuille,Sapphire,6102P-001.jpg
 Patek Philippe,Aquanaut,5067A-027,Aquanaut 5067 Stainless Steel / Red / Singapore 2019,"Patek Philippe caliber E23-250 S C
@@ -1329,7 +1329,7 @@ Hours, Minutes, Seconds | Date",2011,No,,Sapphire,Open,Cushion,40.00 mm,,,120.00
 Patek Philippe,Calatrava,5196G-001,Calatrava 5196 White Gold / Silver,"Patek Philippe caliber 215 PS
 Hours, Minutes, Small Seconds",2004,No,,Sapphire,Closed,Round,37.00 mm,7.68 mm,,30.00 m,,Silver,,Stick / Dot,Dauphine,White Gold,5196G-001.jpg
 Patek Philippe,Grand Complications,5538G-013,Tourbillon Minute Repeater 5538 White Gold / Old Views of Geneva,"Patek Philippe caliber R TO 27
-Hours, Minutes, Small Seconds | Minute Repeater | Tourbillon Escapement",2019,"Yes, 1 unit",,Sapphire,Open,Round,37.00 mm,11.36 mm,,,,Multi-Color,,,Poire,Enamel,5538G-013.jpg
+Hours, Minutes, Small Seconds | Minute Repeater | Tourbillon Escapement",2019,"Yes, 1 unit",,Sapphire,Open,Round,37.00 mm,11.36 mm,,,,Multi-Color,,None,Poire,Enamel,5538G-013.jpg
 Patek Philippe,Grand Complications,5538G-011,Tourbillon Minute Repeater 5538 Eagles in Flight,"Patek Philippe caliber R TO 27 PS
 Hours, Minutes, Small Seconds | Minute Repeater | Tourbillon Escapement",2018,No,,Sapphire,Open,Round,37.00 mm,11.36 mm,,,,Multi-Color,,Arabic Numerals,Poire,Enamel,5538G-011.jpg
 Patek Philippe,Aquanaut,5261R-001,Aquanaut Luce Annual Calendar Rose Gold / Blue,"Patek Philippe caliber 26-330 S QA LU
@@ -2869,11 +2869,11 @@ Hours, Minutes | Chronograph, Column wheel | Tourbillon Escapement, Skeleton",20
 Audemars Piguet,Royal Oak Concept,26235BA.YY.D502CR.01,Royal Oak Concept Tourbillon Chronograph Yellow Gold / Rainbow,"Audemars Piguet caliber AP 2941
 Hours, Minutes | Chronograph, Column wheel | Crown Position Indicator, Power Reserve Indicator, Tourbillon Escapement",2018 - 2018,"Yes, 5 units",Gem-Set,Sapphire,Open,Other,44.00 mm,16.00 mm,,100.00 m,,Skeleton,,Stick / Dot,Stick,Yellow Gold,26235BA.YY.D502CR.01.jpg
 Audemars Piguet,Royal Oak Offshore,15130BC.ZZ.8042BC.01,Royal Oak OffShore 15130 Full Baguette,"Audemars Piguet caliber AP 2325
-Hours, Minutes, Seconds | Date",2011,"Yes, 20 units",Gem-Set,Sapphire,Closed,Other,42.00 mm,12.20 mm,,,,Paved,,,Stick,White Gold,15130BC.ZZ.8042BC.01.jpg
+Hours, Minutes, Seconds | Date",2011,"Yes, 20 units",Gem-Set,Sapphire,Closed,Other,42.00 mm,12.20 mm,,,,Paved,,None,Stick,White Gold,15130BC.ZZ.8042BC.01.jpg
 Audemars Piguet,CODE 11.59,15210OR.OO.A002KB.03,CODE 11.59 Automatic Pink Gold / Blue / Fabric,"Audemars Piguet caliber AP 4302
 Hours, Minutes, Seconds | Date",2019,No,,Sapphire,Open,Round,41.00 mm,10.70 mm,,30.00 m,,Blue,Gradient,Mixed,Stick,Pink Gold,15210OR.OO.A002KB.03.jpg
 Audemars Piguet,Royal Oak Concept,26630BC.GG.D326CR.01,Audemars Piguet Royal Oak Concept Frosted Gold Flying Tourbillon White Gold / Blue,"Audemars Piguet caliber AP 2964
-Hours, Minutes | Tourbillon Escapement",2020,No,,Sapphire,Open,Other,38.50 mm,11.90 mm,,20.00 m,,Blue,Sunburst,,Stick,White Gold,26630BC.GG.D326CR.01.jpg
+Hours, Minutes | Tourbillon Escapement",2020,No,,Sapphire,Open,Other,38.50 mm,11.90 mm,,20.00 m,,Blue,Sunburst,None,Stick,White Gold,26630BC.GG.D326CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26577TI.OO.D002CA.01,Royal Oak Concept 26577 Supersonnerie,"Audemars Piguet caliber AP 2937
 Hours, Minutes | Chronograph, Column wheel | Minute Repeater | Tourbillon Escapement",2016,No,,Sapphire,Closed,Other,44.00 mm,16.50 mm,,20.00 m,,Skeleton,,Stick / Dot,Stick,"Titanium, Ceramic",26577TI.OO.D002CA.01.jpg
 Audemars Piguet,Royal Oak Concept,26223RO.OO.D010CA.01,Royal Oak Concept 26223 Tourbillon Chronograph Pink Gold / White Ceramic,"Audemars Piguet caliber AP 2941
@@ -2893,11 +2893,11 @@ Hours, Minutes | Tourbillon Escapement",2021,"Yes, 250 units",,Sapphire,Open,,42
 Audemars Piguet,Royal Oak,15550ST.OO.1356ST.08,Royal Oak Selfwinding 37 Stainless Steel / Ice Blue,"Audemars Piguet caliber AP 5900
 Hours, Minutes, Seconds | Date",2022,No,,Sapphire,Open,Other,37.00 mm,9.00 mm,,50.00 m,Grande Tapisserie,Blue,,Stick / Dot,Stick,Stainless Steel,15550ST.OO.1356ST.08.jpg
 Audemars Piguet,Royal Oak Concept,26228BC.ZZ.D011CR.01,Audemars Piguet Royal Oak Concept Flying Tourbillon White Gold / Baguette Diamond,"Audemars Piguet caliber AP 2951
-Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2020,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,,Stick,White Gold,26228BC.ZZ.D011CR.01.jpg
+Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2020,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,None,Stick,White Gold,26228BC.ZZ.D011CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26589TI.GG.D006CA.01,Royal Oak Concept GMT Tourbillon Titanium / Grey,"Audemars Piguet caliber AP 2954
 Additional 24 Hour Hand (adjustable), Hours, Minutes | Tourbillon Escapement",2020,"Yes, 50 units",,Sapphire,Open,Other,44.00 mm,16.10 mm,,100.00 m,,Skeleton,,Stick / Dot,Stick,"Titanium, Ceramic",26589TI.GG.D006CA.01.jpg
 Audemars Piguet,Royal Oak Concept,26227OR.ZZ.D011CR.01,Audemars Piguet Royal Oak Concept Flying Tourbillon Pink Gold / Diamond,"Audemars Piguet caliber AP 2951
-Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2020,"Yes, 6 units",Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,,Stick,Pink Gold,26227OR.ZZ.D011CR.01.jpg
+Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2020,"Yes, 6 units",Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,None,Stick,Pink Gold,26227OR.ZZ.D011CR.01.jpg
 Audemars Piguet,Royal Oak Offshore,26175ST.OO.D003CU.01,Royal Oak OffShore 26175 Chronograph Gentleman's Driver,"Audemars Piguet caliber AP 3126 / 3840
 Hours, Minutes, Small Seconds | Date | Chronograph",2010,No,,Sapphire,Closed,Other,42.00 mm,,,,Méga Tapisserie,Black,,Arabic Numerals,Stick,Stainless Steel,26175ST.OO.D003CU.01.jpg
 Audemars Piguet,Jules Audemars,26346BC.OO.D002CR.02,Jules Audemars 26346 Tourbillon Chronograph Openworked White Gold Boutique,"Audemars Piguet caliber AP 2936
@@ -2919,7 +2919,7 @@ Hours, Minutes | Chronograph, Column wheel | Crown Position Indicator, Power Res
 Audemars Piguet,Royal Oak Concept,26265FO.OO.D002.CR.01,Royal Oak Concept 26265 Carbon Tourbillon Chronograph,"Audemars Piguet caliber AP 2895
 Hours, Minutes | Chronograph, Column wheel | Crown Position Indicator, Power Reserve Indicator, Tourbillon Escapement",2008,No,,Sapphire,Open,Other,44.00 mm,16.00 mm,,100.00 m,,Skeleton,,Stick / Dot,Stick,"Titanium, Ceramic, Carbon",26265FO.OO.D002.CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26228BC.SS.D314CR.01,Audemars Piguet Royal Oak Concept Flying Tourbillon White Gold / Baguette Sapphire,"Audemars Piguet caliber AP 2951
-Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,,Stick,White Gold,26228BC.SS.D314CR.01.jpg
+Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,None,Stick,White Gold,26228BC.SS.D314CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26223OR.OO.D099CR.01,Royal Oak Concept 26223 Tourbillon Chronograph Pink Gold,"Audemars Piguet caliber AP 2941
 Hours, Minutes | Chronograph, Column wheel | Crown Position Indicator, Power Reserve Indicator, Tourbillon Escapement",2015,No,,Sapphire,Open,Other,44.00 mm,16.10 mm,,100.00 m,,Skeleton,,Stick / Dot,Stick,Rose Gold,26223OR.OO.D099CR.01.jpg
 Audemars Piguet,Jules Audemars,25955OR.OO.D002CR.01,Jules Audemars Small Seconds & Power Reserve Pink Gold / Silver,"Audemars Piguet caliber AP 3092 / 3900
@@ -2939,7 +2939,7 @@ Hours, Minutes | Chronograph, Column wheel | Crown Position Indicator, Power Res
 Audemars Piguet,Royal Oak Concept,26587TI.OO.D010CA.01,Royal Oak Concept Tourbillon Chronograph Openworked Selfwinding Titanium / White,"Audemars Piguet caliber AP 2947
 Hours, Minutes, Small Seconds | Chronograph, Column wheel | Tourbillon Escapement, Skeleton",2018,No,,Sapphire,Open,Other,44.00 mm,16.15 mm,,100.00 m,,Skeleton,,Stick / Dot,Stick,"Titanium, Ceramic",26587TI.OO.D010CA.01.jpg
 Audemars Piguet,Royal Oak Concept,26228OR.ZZ.D011CR.01,Audemars Piguet Royal Oak Concept Flying Tourbillon Pink Gold / Baguette Diamond,"Audemars Piguet caliber AP 2951
-Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,"Yes, 5 units",Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,,Stick,Pink Gold,26228OR.ZZ.D011CR.01.jpg
+Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,"Yes, 5 units",Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,None,Stick,Pink Gold,26228OR.ZZ.D011CR.01.jpg
 Audemars Piguet,Royal Oak,15202OR.OO.1240OR.01,Royal Oak Extra-Thin Pink Gold / Blue,"Audemars Piguet caliber AP 2121
 Hours, Minutes | Date",2012,No,,Sapphire,Open,Other,39.00 mm,9.80 mm,,50.00 m,Petite Tapisserie,Blue,,Stick / Dot,Stick,Pink Gold,15202OR.OO.1240OR.01.jpg
 Audemars Piguet,Royal Oak,15468BC.YG.1259BC.01,Royal Oak 37 Double Balance Wheel Openworked Frosted White Gold / Rainbow,"Audemars Piguet caliber AP 3132
@@ -2957,15 +2957,15 @@ Hours, Minutes, Small Seconds | Date | Chronograph",2013,No,,Sapphire,Open,Other
 Audemars Piguet,Royal Oak Concept,26593PT.ZZ.D002CA.01,Royal Oak Concept Supersonnerie Platinum The Hour Glass,"Audemars Piguet caliber AP 2937
 Hours, Minutes | Chronograph, Column wheel | Minute Repeater | Tourbillon Escapement",2016,No,,Sapphire,Closed,Other,44.00 mm,16.50 mm,,20.00 m,,Skeleton,,Stick / Dot,Stick,"Titanium, Ceramic",26593PT.ZZ.D002CA.01.jpg
 Audemars Piguet,Royal Oak Concept,26630OR.GG.D326CR.01,Audemars Piguet Royal Oak Concept Frosted Gold Flying Tourbillon Pink Gold / Blue,"Audemars Piguet caliber AP 2964
-Hours, Minutes | Tourbillon Escapement",2020,No,,Sapphire,Open,Other,38.50 mm,11.90 mm,,20.00 m,,Blue,Sunburst,,Stick,Pink Gold,26630OR.GG.D326CR.01.jpg
+Hours, Minutes | Tourbillon Escapement",2020,No,,Sapphire,Open,Other,38.50 mm,11.90 mm,,20.00 m,,Blue,Sunburst,None,Stick,Pink Gold,26630OR.GG.D326CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26227BC.SS.D314CR.01,Audemars Piguet Royal Oak Concept Flying Tourbillon White Gold / Sapphire,"Audemars Piguet caliber AP 2951
-Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,,Stick,White Gold,26227BC.SS.D314CR.01.jpg
+Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,None,Stick,White Gold,26227BC.SS.D314CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26589IO.OO.D056CA.01,Royal Oak Concept GMT Tourbillon Titanium / Green,"Audemars Piguet caliber AP 2954
 Additional 24 Hour Hand (adjustable), Hours, Minutes | Tourbillon Escapement",2022,No,,Sapphire,Open,Other,44.00 mm,16.10 mm,,100.00 m,,Skeleton,,Stick / Dot,Stick,"Titanium, Ceramic",26589IO.OO.D056CA.01.jpg
 Audemars Piguet,Royal Oak Concept,26227BC.SS.D326CR.01,Audemars Piguet Royal Oak Concept Flying Tourbillon White Gold / Sapphire - Diamond,"Audemars Piguet caliber AP 2951
-Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,,Stick,White Gold,26227BC.SS.D326CR.01.jpg
+Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,None,Stick,White Gold,26227BC.SS.D326CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26227BC.YY.D326CR.01,Audemars Piguet Royal Oak Concept Flying Tourbillon White Gold / Rainbow,"Audemars Piguet caliber AP 2951
-Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,,Stick,White Gold,26227BC.YY.D326CR.01.jpg
+Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,None,Stick,White Gold,26227BC.YY.D326CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26223TI.OO.D099CR01.,Royal Oak Concept Tourbillon Chronograph Titanium,"Audemars Piguet caliber AP 2941
 Hours, Minutes | Chronograph, Column wheel | Crown Position Indicator, Power Reserve Indicator, Tourbillon Escapement",2015,No,,Sapphire,Open,Other,44.00 mm,16.10 mm,,100.00 m,,Skeleton,,Stick / Dot,Stick,Titanium,26223TI.OO.D099CR01..jpg
 Audemars Piguet,Jules Audemars,26151PT.OO.D028CR.01,Jules Audemars Minute Repeater Jumping Hours Platinum / White,"Audemars Piguet caliber AP 2907
@@ -2973,7 +2973,7 @@ Minutes, Small Seconds, Jumping Hours | Minute Repeater",,No,,Sapphire,Open,Roun
 Audemars Piguet,CODE 11.59,15210OR.OO.A028CR.01,CODE 11.59 Automatic Pink Gold / Blue Gradient,"Audemars Piguet caliber AP 4302
 Hours, Minutes, Seconds | Date",2020 - 2022,No,,Sapphire,Open,Round,41.00 mm,10.70 mm,,30.00 m,,Blue,Gradient,Mixed,Stick,Pink Gold,15210OR.OO.A028CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26228OR.SS.D314CR.01,Audemars Piguet Royal Oak Concept Flying Tourbillon Pink Gold / Baguette Sapphire,"Audemars Piguet caliber AP 2951
-Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,,Stick,Pink Gold,26228OR.SS.D314CR.01.jpg
+Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2021,No,Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,None,Stick,Pink Gold,26228OR.SS.D314CR.01.jpg
 Audemars Piguet,Royal Oak Concept,26580IO.OO.D010CA.01,Royal Oak Concept 26580 GMT Tourbillon Titanium / White Ceramics,Audemars Piguet caliber AP 2930,2014,No,,Sapphire,Open,Other,44.00 mm,16.06 mm,,100.00 m,,Skeleton,,Stick / Dot,Stick,"Titanium, Ceramic",26580IO.OO.D010CA.01.jpg
 Audemars Piguet,CODE 11.59,15210BC.OO.A002CR.01,CODE 11.59 Automatic White Gold / Black,"Audemars Piguet caliber AP 4302
 Hours, Minutes, Seconds | Date",2019,No,,Sapphire,Open,Round,41.00 mm,10.70 mm,,30.00 m,,Black,Gloss,Mixed,Stick,White Gold,15210BC.OO.A002CR.01.jpg
@@ -2996,7 +2996,7 @@ Hours, Minutes",,No,,Sapphire,Open,Round,41.00 mm,6.70 mm,,20.00 m,,Black,Gloss,
 Audemars Piguet,Royal Oak Concept,26623BC.GG.D077CA.01,Royal Oak Concept Black Panther Flying Tourbillon White Gold,"Audemars Piguet caliber AP 2965
 Hours, Minutes | Tourbillon Escapement",2021,"Yes, 1 unit",,Sapphire,Open,,42.00 mm,14.60 mm,,50.00 m,,Multi-Color,Guilloche,Mixed,Dauphine,White Gold,26623BC.GG.D077CA.01.jpg
 Audemars Piguet,Royal Oak Concept,26227BC.ZZ.D011CR.01,Audemars Piguet Royal Oak Concept Flying Tourbillon White Gold / Diamond,"Audemars Piguet caliber AP 2951
-Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2020,"Yes, 6 units",Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,,Stick,White Gold,26227BC.ZZ.D011CR.01.jpg
+Hours, Minutes | Tourbillon Escapement, Power Reserve Indicator",2020,"Yes, 6 units",Gem-Set,Sapphire,Open,Other,38.50 mm,11.60 mm,,20.00 m,,Skeleton,,None,Stick,White Gold,26227BC.ZZ.D011CR.01.jpg
 Bulgari,Octo,103077,Octo Finissimo Automatic Ceramic / Black / Bracelet,"Bulgari caliber BVL 138
 Hours, Minutes, Small Seconds",2019,No,,Sapphire,Open,Other,40.00 mm,5.15 mm,,30.00 m,,Black,Matte,Mixed,Dauphine,Ceramic,103077.jpg
 Bulgari,Bulgari Bulgari,102355,Bulgari Solotempo 41.5 Blue,"Bulgari caliber BVL 191
@@ -3057,7 +3057,7 @@ Hours, Minutes",,No,,Sapphire,Closed,Round,23.00 mm,,,30.00 m,,Black,,Gem-Set In
 Bulgari,Serpenti,101956,Serpenti Tubogas Pink Gold Diamond Double Tour,"Bulgari caliber B033
 Hours, Minutes",,No,,Sapphire,Closed,Other,35.00 mm,,,,,Paved,,Gem-Set Indexes,Sword,Pink Gold,101956.jpg
 Bulgari,Octo,103563,Octo Finissimo Automatic Tatsuo Miyajima / Ceramic,"Bulgari caliber BVL 138
-Hours, Minutes, Small Seconds",2021,"Yes, 120 units",,Sapphire,Open,Other,40.00 mm,5.15 mm,,30.00 m,,Blue,Matte,,Dauphine,Ceramic,103563.jpg
+Hours, Minutes, Small Seconds",2021,"Yes, 120 units",,Sapphire,Open,Other,40.00 mm,5.15 mm,,30.00 m,,Blue,Matte,None,Dauphine,Ceramic,103563.jpg
 Bulgari,B.Zero1,102319,B.Zero1 Stainless Steel Black Bracelet,"Bulgari caliber B033
 Hours, Minutes",,No,,Sapphire,Closed,Round,23.00 mm,,,30.00 m,,Black,,Gem-Set Indexes,Feuille,Stainless Steel,102319.jpg
 Bulgari,Bulgari Bulgari,102053,Bulgari Solotempo 41.5 Two Tone White Bracelet,"Bulgari caliber BVL 191
