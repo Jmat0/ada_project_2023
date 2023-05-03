@@ -10,6 +10,7 @@ char_df['Reference'] = char_df['Reference'].str.replace('/', '-')
 
 # Create a new column with the image file names
 char_df['image_file'] = char_df['Reference'].apply(lambda x: f"{x}.jpg")
+char_df['image_file_processed'] = 'processed_' + char_df['image_file']
 
 # Define the directory where the image files are stored
 image_dir = '/Users/lawrencejesudasan/Downloads/Watches_Images'
