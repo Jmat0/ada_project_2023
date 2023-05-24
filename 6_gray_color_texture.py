@@ -3,6 +3,7 @@ from PIL import Image
 import numpy as np
 import pandas as pd
 from skimage.feature import graycomatrix, graycoprops
+from sklearn.preprocessing import StandardScaler
 
 # Set the directory path containing the images
 dir_path = "/Users/julian/Desktop/Watches_Images_Processed"
@@ -61,3 +62,8 @@ df_gray.to_csv("df_gray.csv")
 df_color.to_csv("df_color.csv")
 df_texture.to_csv("df_texture.csv")
 
+
+# Create a merged dataset which contains all the 3 features
+merged_df = pd.merge(df_gray, df_color, on="filename")
+merged_df = pd.merge(merged_df, df_texture, on="filename")
+merged_df.to_csv("merged_df.csv")
