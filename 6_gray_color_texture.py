@@ -8,7 +8,9 @@ from skimage.feature import graycomatrix, graycoprops
 dir_path = "/Users/julian/Desktop/Watches_Images_Processed"
 
 # Create an empty DataFrame with columns for the image filename, the grayscale histogram features, the color histogram features, and the texture features
-df_new = pd.DataFrame(columns=["filename", "gray_features", "color_features", "texture_features"])
+df_gray = pd.DataFrame(columns=["filename", "gray_features"])
+df_color = pd.DataFrame(columns=["filename", "color_features"])
+df_texture = pd.DataFrame(columns=["filename", "texture_features"])
 
 # Loop through each subfolder in the directory
 for subfolder in os.listdir(dir_path):
@@ -20,9 +22,11 @@ for subfolder in os.listdir(dir_path):
     for filename in os.listdir(subfolder_path):
         # Ignore non-image files and the .DS_Store file
         if not filename.endswith(('.jpg', '.jpeg', '.png')) or filename == '.DS_Store':
+            print(f"Skipping file: {filename}")
             continue
         # Ignore files that don't start with "processed_"
         if not filename.startswith('processed_'):
+            print(f"Skipping file: {filename}")
             continue
         # Extract the reference name by removing the "processed_" prefix and file extension
         reference = os.path.splitext(filename[len('processed_'):])[0]
@@ -44,18 +48,16 @@ for subfolder in os.listdir(dir_path):
         gray_features = gray_hist.reshape(-1)
         color_features = color_hist.reshape(-1)
         # Concatenate the feature vectors
-        features = np.concatenate([gray_features, color_features, texture_props])
+        features = np.concatenate([gray_features]),  # color_features, texture_props])
         # Add the new row to the DataFrame of new data
-        df_new = pd.concat([df_new, pd.DataFrame({"filename": [reference], "gray_features": [gray_features], "color_features": [color_features], "texture_features": [texture_props]})], ignore_index=True)
+        df_gray = pd.concat([df_gray, pd.DataFrame({"filename": [reference], "gray_features": [gray_features]})], ignore_index=True)
+        df_color = pd.concat([df_color, pd.DataFrame({"filename": [reference], "color_features": [color_features]})],ignore_index=True)
+        df_texture = pd.concat([df_texture, pd.DataFrame({"filename": [reference], "texture_features": [texture_props]})], ignore_index=True)
 
-# Load your existing DataFrame from the "data_with_images.csv" file
-df_existing = pd.read_csv("5_data_with_images copie.csv")
+        # Print the filename of the processed image
+        print(f"Processed image: {reference}")
 
-# Merge the new DataFrame with the existing DataFrame using the reference name column as the link
-df_merged = pd.merge(df_existing, df_new, left_on="Reference", right_on="filename")
+df_gray.to_csv("df_gray.csv")
+df_color.to_csv("df_color.csv")
+df_texture.to_csv("df_texture.csv")
 
-# Drop the redundant "filename" column
-df_merged.drop("filename", axis=1, inplace=True)
-
-# Save the merged DataFrame to a file
-df_merged.to_csv("5_data_with_images.csv", index=False)
