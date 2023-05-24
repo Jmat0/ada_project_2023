@@ -5,10 +5,12 @@ import pandas as pd
 from skimage.feature import graycomatrix, graycoprops
 
 # Set the directory path containing the images
-dir_path = "/Users/julian/Desktop/Watches_Images_Processed"
+dir_path = "/Users/lawrencejesudasan/Downloads/Watches_Images_Processed copy"
 
 # Create an empty DataFrame with columns for the image filename, the grayscale histogram features, the color histogram features, and the texture features
-df_new = pd.DataFrame(columns=["filename", "gray_features", "color_features", "texture_features"])
+df_gray_law = pd.DataFrame(columns=["filename", "gray_features"])
+df_color_law = pd.DataFrame(columns=["filename", "color_features"])
+df_texture_law = pd.DataFrame(columns=["filename", "texture_features"])
 
 # Loop through each subfolder in the directory
 for subfolder in os.listdir(dir_path):
@@ -46,16 +48,8 @@ for subfolder in os.listdir(dir_path):
         # Concatenate the feature vectors
         features = np.concatenate([gray_features, color_features, texture_props])
         # Add the new row to the DataFrame of new data
-        df_new = pd.concat([df_new, pd.DataFrame({"filename": [reference], "gray_features": [gray_features], "color_features": [color_features], "texture_features": [texture_props]})], ignore_index=True)
-
-# Load your existing DataFrame from the "data_with_images.csv" file
-df_existing = pd.read_csv("5_data_with_images copie.csv")
-
-# Merge the new DataFrame with the existing DataFrame using the reference name column as the link
-df_merged = pd.merge(df_existing, df_new, left_on="Reference", right_on="filename")
-
-# Drop the redundant "filename" column
-df_merged.drop("filename", axis=1, inplace=True)
-
-# Save the merged DataFrame to a file
-df_merged.to_csv("5_data_with_images.csv", index=False)
+        df_gray_law = pd.concat([df_gray_law, pd.DataFrame({"filename": [reference], "gray_features": [gray_features]})], ignore_index=True)
+        # Add the new row to the DataFrame of new data
+        df_color_law = pd.concat([df_color_law, pd.DataFrame({"filename": [reference], "color_features": [color_features]})], ignore_index=True)
+        # Add the new row to the DataFrame of new data
+        df_texture_law = pd.concat([df_texture_law, pd.DataFrame({"filename": [reference], "texture_features": [texture_props]})], ignore_index=True)
