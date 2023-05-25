@@ -5,12 +5,13 @@ import pandas as pd
 from skimage.feature import graycomatrix, graycoprops
 
 # Set the directory path containing the images
-dir_path = "/Users/julian/Desktop/Watches_Images_Processed"
+dir_path = "/Users/lawrencejesudasan/Downloads/Watches_Images_Processed"
 
 # Create an empty DataFrame with columns for the image filename, the grayscale histogram features, the color histogram features, and the texture features
 df_gray = pd.DataFrame(columns=["filename", "gray_features"])
 df_color = pd.DataFrame(columns=["filename", "color_features"])
 df_texture = pd.DataFrame(columns=["filename", "texture_features"])
+
 
 # Loop through each subfolder in the directory
 for subfolder in os.listdir(dir_path):
@@ -36,10 +37,10 @@ for subfolder in os.listdir(dir_path):
         gray = img.convert('L')
         # Compute the grayscale histogram features
         gray_hist = np.array(gray.histogram())
-        gray_hist = gray_hist / np.sum(gray_hist)  # Normalize the histogram so that the values sum to 1
+        #gray_hist = gray_hist / np.sum(gray_hist)  # Normalize the histogram so that the values sum to 1
         # Compute the color histogram features
         color_hist = np.array(img.histogram())
-        color_hist = color_hist / np.sum(color_hist)  # Normalize the histogram so that the values sum to 1
+        #color_hist = color_hist / np.sum(color_hist)  # Normalize the histogram so that the values sum to 1
         # Compute the texture features using graycomatrix and graycoprops
         gray_arr = np.array(gray)
         glcm = graycomatrix(gray_arr, distances=[1], angles=[0], levels=256, symmetric=True, normed=True)
@@ -61,3 +62,6 @@ df_gray.to_csv("df_gray.csv")
 df_color.to_csv("df_color.csv")
 df_texture.to_csv("df_texture.csv")
 
+merged_df = pd.merge(df_gray, df_color, on="filename")
+merged_df = pd.merge(merged_df, df_texture, on="filename")
+merged_df.to_csv("df_all_features.csv")
