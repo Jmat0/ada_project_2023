@@ -24,7 +24,7 @@ window.geometry(f'800x800+{x}+{y}')
 window.resizable(False, False)
 
 # Define the placeholder image
-placeholder_image_path = "placeholder.png"  # Replace with the actual path to your placeholder image
+placeholder_image_path = "placeholder.png"
 placeholder_original = Image.open(placeholder_image_path)
 placeholder_resized = placeholder_original.resize((130, 130))
 placeholder_image = ImageTk.PhotoImage(placeholder_resized)
@@ -55,7 +55,7 @@ text_instruction = tk.Label(left_frame, text="Use the filters below to adjust yo
 text_instruction.grid(row=1, column=0, sticky='w', columnspan=2)
 
 # Read the CSV file
-csv_file_path = "data_with_images.csv"  # Replace with the actual path to your CSV file
+csv_file_path = "data_with_images.csv"
 
 # Read the CSV file and extract the image file names
 image_file_names = []
@@ -258,7 +258,7 @@ def search_button_click():
     # Clear the image labels and display placeholder images
     for label in placeholder_labels:
         label.configure(image=placeholder_image)
-        label.image = placeholder_image  # Store a reference to prevent image garbage collection
+        label.image = placeholder_image  # Store a reference image
 
     # Update the placeholder labels with the images and text of the watches
     for i, watch in enumerate(selected_watches):
@@ -284,7 +284,7 @@ def search_button_click():
     if not selected_watches:
         for label in placeholder_labels:
             label.configure(image=no_results_image)
-            label.image = no_results_image  # Store a reference to prevent image garbage collection
+            label.image = no_results_image  # Store a reference image
 
         suggestions_label.configure(text="No results found")
 
