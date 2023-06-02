@@ -3,7 +3,7 @@ import pandas as pd
 import re
 
 # Load the characteristics dataset
-char_df = pd.read_csv('cleaned_watch_text_def.csv')
+char_df = pd.read_csv('2_cleaned_watch_text_def copie.csv')
 pattern = r' \(aka.*\)'
 char_df['Reference'] = char_df['Reference'].apply(lambda x: re.sub(pattern, '', x))
 char_df['Reference'] = char_df['Reference'].str.replace('/', '-')
@@ -31,3 +31,18 @@ mapped_df.to_csv("data_with_images.csv", index=False)
 
 # Print the dictionary to verify the mapping
 print(char_to_image)
+
+# Load the 'data_with_images.csv' file
+data_with_images = pd.read_csv('data_with_images.csv')
+
+# Load the dataset containing the 'Price' column
+prices_df = pd.read_csv('2_cleaned_watch_text_def copy.csv')  # Replace 'prices.csv' with the actual file name
+
+# Merge the datasets based on the 'Reference' column
+merged_df = pd.merge(data_with_images, prices_df[['Reference', 'Price']], on='Reference', how='left')
+
+# Replace NaN values in the 'Price' column with "NA"
+merged_df['Price'].fillna("NA", inplace=True)
+
+# Save the merged dataset to a new CSV file
+merged_df.to_csv('data_with_images_and_prices.csv', index=False)
