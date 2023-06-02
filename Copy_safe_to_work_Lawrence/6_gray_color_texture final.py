@@ -58,10 +58,10 @@ for subfolder in os.listdir(dir_path):
         # Print the filename of the processed image
         print(f"Processed image: {reference}")
 
-df_gray.to_csv("df_gray.csv")
-df_color.to_csv("df_color.csv")
-df_texture.to_csv("df_texture.csv")
+df_gray.to_csv("8a_df_gray copy.csv")
+df_color.to_csv("8b_df_color copy.csv")
+df_texture.to_csv("8c_df_texture copy.csv")
 
 merged_df = pd.merge(df_gray, df_color, on="filename")
 merged_df = pd.merge(merged_df, df_texture, on="filename")
-merged_df.to_csv("df_all_features.csv")
+merged_df.to_csv("9a_merged_df copy.csv")
