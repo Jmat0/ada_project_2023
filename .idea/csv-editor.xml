@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="/2_cleaned_watch_text_def.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/5_data_with_images.csv">
           <value>
             <Attribute>
@@ -31,7 +38,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Copy_safe_to_work_Lawrence/2_cleaned_watch_text_def copy.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Copy_safe_to_work_Lawrence/5_data_with_images copie.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Copy_safe_to_work_Lawrence/data_with_images.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
