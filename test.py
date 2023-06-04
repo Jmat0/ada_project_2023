@@ -1,50 +1,68 @@
-import os
 from PIL import Image
 import numpy as np
 import pandas as pd
+import os
+from skimage.feature import graycomatrix, graycoprops
+from sklearn.preprocessing import StandardScaler
 
-# Set the directory path containing the images
-dir_path = "/Users/julian/Desktop/Watches_Images_Processed copie"
+# Input image from User
+imageFileName = input("Enter the image name with absolute path: ")
+myImage = Image.open(imageFileName)
 
-# Create an empty DataFrame with columns for the image filename and the color histogram features
-df_new = pd.DataFrame(columns=["filename", "features"])
+# Create an empty DataFrame with columns for the image filename, the grayscale histogram features, the color histogram features, and the texture features
+df_gray = pd.DataFrame(columns=["filename", "gray_features"])
+df_color = pd.DataFrame(columns=["filename", "color_features"])
+df_texture = pd.DataFrame(columns=["filename", "texture_features"])
 
-# Loop through each subfolder in the directory
-for subfolder in os.listdir(dir_path):
-    subfolder_path = os.path.join(dir_path, subfolder)
-    # Check if the subfolder is actually a directory
-    if not os.path.isdir(subfolder_path):
-        continue
-    # Loop through each image in the subfolder
-    for filename in os.listdir(subfolder_path):
-        # Ignore non-image files and the .DS_Store file
-        if not filename.endswith(('.jpg', '.jpeg', '.png')) or filename == '.DS_Store':
-            continue
-        # Ignore files that don't start with "processed_"
-        if not filename.startswith('processed_'):
-            continue
-        # Extract the reference name by removing the "processed_" prefix and file extension
-        reference = os.path.splitext(filename[len('processed_'):])[0]
-        # Load the image
-        img = Image.open(os.path.join(subfolder_path, filename))
-        # Convert the image to grayscale
-        gray = img.convert('L')
-        # Compute the color histogram features
-        hist = np.array(gray.histogram())
-        hist = hist / np.sum(hist)  # Normalize the histogram so that the values sum to 1
-        # Reshape the feature vector to a 1D array
-        features = hist.reshape(-1)
-        # Add the new row to the DataFrame of new data
-        df_new = pd.concat([df_new, pd.DataFrame({"filename": [reference], "features": [features]})], ignore_index=True)
+# Resize and save the image
+image_size = (350, 350)
+myImage.thumbnail(image_size, Image.LANCZOS)
+gray = myImage.convert('L')
 
-# Load your existing DataFrame from the "data_with_images.csv" file
-df_existing = pd.read_csv("5_data_with_images copie.csv")
+gray_hist = np.array(gray.histogram())
+gray_hist = gray_hist / np.sum(gray_hist)
+small_value = 0.00001
+gray_hist[gray_hist == 0] = small_value
 
-# Merge the new DataFrame with the existing DataFrame using the reference name column as the link
-df_merged = pd.merge(df_existing, df_new, left_on="Reference", right_on="filename")
+color_hist = np.array(myImage.histogram())
+color_hist = color_hist / np.sum(color_hist)
+color_hist[color_hist == 0] = small_value
 
-# Drop the redundant "filename" column
-df_merged.drop("filename", axis=1, inplace=True)
+gray_arr = np.array(gray)
+glcm = graycomatrix(gray_arr, distances=[1], angles=[0], levels=256, symmetric=True, normed=True)
+texture_props = np.array(
+    [graycoprops(glcm, 'contrast'), graycoprops(glcm, 'energy'), graycoprops(glcm, 'homogeneity'),
+     graycoprops(glcm, 'correlation')]).reshape(-1)
 
-# Save the merged DataFrame to the existing file
-df_merged.to_csv("5_data_with_images copie.csv", index=False)
+gray_features = gray_hist.reshape(-1)
+color_features = color_hist.reshape(-1)
+
+df_gray = pd.concat([df_gray, pd.DataFrame({"filename": [imageFileName], "gray_features": [gray_features]})], ignore_index=True)
+df_color = pd.concat([df_color, pd.DataFrame({"filename": [imageFileName], "color_features": [color_features]})], ignore_index=True)
+df_texture = pd.concat([df_texture, pd.DataFrame({"filename": [imageFileName], "texture_features": [texture_props]})], ignore_index=True)
+
+merged_df = pd.merge(df_gray, df_color, on="filename")
+merged_df = pd.merge(merged_df, df_texture, on="filename")
+
+print(merged_df['gray_features'])
+
+scaler = StandardScaler()
+
+# Scale the feature arrays
+gray_features_scaled = merged_df['gray_features']
+color_features_scaled = merged_df['color_features']
+texture_props_scaled = merged_df['texture_features']
+
+# Assign the feature values to the DataFrame columns
+merged_df['gray_features'] = gray_features_scaled
+merged_df['color_features'] = color_features_scaled
+merged_df['texture_features'] = texture_props_scaled
+
+# Read the existing DataFrame
+existing_df = pd.read_csv("9b_merged_df_scaled copy 2.csv")
+
+# Append `merged_df` to `existing_df`
+appended_df = pd.concat([existing_df, merged_df], ignore_index=True)
+
+# Save the appended DataFrame to a CSV file
+appended_df.to_csv("gradio_final.csv", index=False)

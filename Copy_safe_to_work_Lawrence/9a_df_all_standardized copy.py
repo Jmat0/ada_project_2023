@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 
 # Read the CSV file into a pandas DataFrame
-data = pd.read_csv('9a_merged_df copy.csv')
+data = pd.read_csv('8d_merged_df copy.csv')
 
 # Extract the features into separate arrays
 gray_features = data['gray_features'].apply(lambda x: np.fromstring(x[1:-1], sep=' ')).values
@@ -35,4 +35,3 @@ data['texture_features'] = texture_features_scaled
 
 # Save the updated DataFrame to a CSV file
 data.to_csv("merged_df_scaled.csv", index=False)
-
