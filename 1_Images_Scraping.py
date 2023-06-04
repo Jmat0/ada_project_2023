@@ -12,8 +12,8 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 # Brands and their corresponding URLs
 brands = ["Rolex", "Omega", "Patek-philippe", "Audemars-piguet", "Cartier", "Breitling", "Tag-Heuer", "Iwc", "Chopard",
-         "Jaeger-lecoultre", "Blancpain", "Hublot", "Zenith", "Certina", "Panerai","Girard-perregaux", "Breguet",
-        "Montblanc", "Tissot", "Bulgari"]
+          "Jaeger-lecoultre", "Blancpain", "Hublot", "Zenith", "Certina", "Panerai", "Girard-perregaux", "Breguet",
+          "Montblanc", "Tissot", "Bulgari"]
 
 urls = ["https://watchbase.com/" + brand.lower() for brand in brands]
 
