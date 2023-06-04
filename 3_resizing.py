@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # Define the path to your images directory
-images_dir = '/Users/lawrencejesudasan/Downloads/Watches_Images_Processed'
+images_dir = '../../../../../GitHub/ADA_Project/Watches_Images'
 
 # Define the desired image size for preprocessing
 image_size = (350, 350)
@@ -11,7 +11,8 @@ image_size = (350, 350)
 for root, dirs, files in os.walk(images_dir):
     # Loop through all the image files in the subdirectory
     for filename in files:
-        if filename.endswith('.jpg') or filename.endswith('.png'): # check if the file is an image file
+        # check if the file is an image file
+        if filename.endswith('.jpg') or filename.endswith('.png'):
             # Load the image
             img = Image.open(os.path.join(root, filename))
             # Resize the image while maintaining aspect ratio
