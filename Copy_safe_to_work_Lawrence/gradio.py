@@ -7,7 +7,6 @@ from skimage.feature import graycomatrix, graycoprops
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
-from gradio.inputs import Image as GradioImage
 from torchvision.transforms import transforms
 import torch
 import torch.nn as nn
