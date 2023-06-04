@@ -65,36 +65,3 @@ df_texture.to_csv("8c_df_texture copy.csv")
 merged_df = pd.merge(df_gray, df_color, on="filename")
 merged_df = pd.merge(merged_df, df_texture, on="filename")
 merged_df.to_csv("9a_merged_df copy.csv")
-
-################################################ Standardization of features values
-
-df = pd.read_csv('gradio.csv')
-
-# Extract the features into separate arrays
-gray_features = df['gray_features'].apply(lambda x: np.fromstring(x[1:-1], sep=' ')).values
-color_features = df['color_features'].apply(lambda x: np.fromstring(x[1:-1], sep=' ')).values
-texture_features = df['texture_features'].apply(lambda x: np.fromstring(x[1:-1], sep=' ')).values
-
-# Create a StandardScaler object
-scaler = StandardScaler()
-
-# Scale the individual feature arrays
-gray_features_scaled = np.vstack(gray_features).astype(float)
-gray_features_scaled = scaler.fit_transform(gray_features_scaled).tolist()
-
-color_features_scaled = np.vstack(color_features).astype(float)
-color_features_scaled = scaler.fit_transform(color_features_scaled).tolist()
-
-texture_features_scaled = np.vstack(texture_features).astype(float)
-texture_features_scaled = scaler.fit_transform(texture_features_scaled).tolist()
-
-# Update the data DataFrame with the scaled features
-df['gray_features'] = gray_features_scaled
-df['color_features'] = color_features_scaled
-df['texture_features'] = texture_features_scaled
-
-print(df)
-
-df.to_csv('gradio.csv')
-
-#new_dataset.to_csv('9b_merged_df_scaled copy 2.csv')
