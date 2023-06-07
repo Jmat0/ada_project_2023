@@ -28,7 +28,7 @@ def image_analysis(image_array, type_of_suggestions):
     # Convert the image to RGB mode
     rgb_img = myImage.convert('RGB')
 
-    file_path = os.path.join("../../../../../GitHub/ADA_Project/Watches_Images", "../Image_test.png")
+    file_path = os.path.join("./Watches_Images", "Image_test.png")
     rgb_img.save(file_path)
     # Convert the image to RGB mode
     rgb_img = rgb_img.convert('RGB')
@@ -179,7 +179,7 @@ def image_analysis(image_array, type_of_suggestions):
 
     # Save the new dataset to a CSV file
     new_dataset.to_csv('8b_merged_df_gradio.csv', index=False)
-    df = pd.read_csv('../8b_merged_df_gradio.csv')
+    df = pd.read_csv('8b_merged_df_gradio.csv')
 
     ################################################ Standardization of features values
 
@@ -211,7 +211,7 @@ def image_analysis(image_array, type_of_suggestions):
     ################################################ KNN
 
     # Read the CSV file into a pandas DataFrame
-    data = pd.read_csv('../temp1.csv')
+    data = pd.read_csv('temp1.csv')
     # Change the Brand names to be equal to the name saved under the classes vector
     # Mapping of brand names
     brand_mapping = {
