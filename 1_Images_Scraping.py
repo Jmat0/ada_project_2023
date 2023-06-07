@@ -91,11 +91,6 @@ for url in urls:
 
         if total_count >= images_per_category * len(category_links):
             break
-    # Stop processing categories for the brand if we have reached the maximum number of images
-    # if total_count < images_per_category * len(category_links):
-    #    print(f"Only {total_count} images found for {url.split('/')[-1]}")
-    # else:
-    #   print(f"{images_per_category * len(category_links)} images downloaded for {url.split('/')[-1]}")
 
 # Close the browser
 driver.quit()

@@ -26,12 +26,12 @@ transformer = transforms.Compose([
 ])
 
 # Path to the original image folder
-original_folder = './Watches_Images/' #contains all the images
+original_folder = './watches_images' #contains all the images
 
 # Path to the destination folders for validation, testing, and training
-prediction_folder = './prediction/'
-testing_folder = './testing/'
-training_folder = './training/'
+prediction_folder = './prediction'
+testing_folder = './testing'
+training_folder = './training'
 
 # Create the destination folders if they don't exist
 os.makedirs(prediction_folder, exist_ok=True)
@@ -239,7 +239,7 @@ for epoch in range(num_epochs):
 
     # Save the best model
     if test_accuracy > best_accuracy:
-        torch.save(model.state_dict(), 'best_checkpoint.model')
+        torch.save(model.state_dict(), '7b_best_checkpoint.model')
         best_accuracy = test_accuracy
 
 

@@ -28,7 +28,7 @@ def image_analysis(image_array, type_of_suggestions):
     # Convert the image to RGB mode
     rgb_img = myImage.convert('RGB')
 
-    file_path = os.path.join("./Watches_Images", "Image_test.png")
+    file_path = os.path.join("./watches_images", "image_test.png")
     rgb_img.save(file_path)
     # Convert the image to RGB mode
     rgb_img = rgb_img.convert('RGB')
@@ -91,7 +91,7 @@ def image_analysis(image_array, type_of_suggestions):
 
             return output
 
-    checkpoint = torch.load('best_checkpoint.model')
+    checkpoint = torch.load('7b_best_checkpoint.model')
     model = ConvNet(num_classes=20)
     model.load_state_dict(checkpoint)
     model.eval()  # to set dropout and batch normalisation
@@ -293,7 +293,7 @@ def image_analysis(image_array, type_of_suggestions):
     closest_watch_ids = [reference_names[idx] for idx in neighbor_indices]
 
     # Get the corresponding image paths for the closest watch IDs
-    image_folder = "Watches_Images_No_Category"
+    image_folder = "watches_images_no_category"
     image_paths = [os.path.join(image_folder, f"{watch_id}.jpg") for watch_id in closest_watch_ids[:3]]
 
     # Load the images and resize them

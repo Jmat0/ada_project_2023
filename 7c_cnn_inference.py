@@ -122,7 +122,7 @@ print(pred_dict)
 
 
 # Path to the folder containing the ground truth labels
-truth_folder = './truth_folder/'
+truth_folder = './truth_folder'
 
 # Initialize variables
 total_images = 0
