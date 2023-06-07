@@ -74,7 +74,7 @@ class ConvNet(nn.Module):
 
         return output
 
-checkpoint= torch.load('best_checkpoint.model')
+checkpoint= torch.load('7b_best_checkpoint.model')
 model=ConvNet(num_classes=20)
 model.load_state_dict(checkpoint)
 model.eval() # to set dropout and batch normalisation
