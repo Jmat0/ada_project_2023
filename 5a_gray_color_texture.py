@@ -6,7 +6,7 @@ from skimage.feature import graycomatrix, graycoprops
 from sklearn.preprocessing import StandardScaler
 
 # Set the directory path containing the images
-dir_path = "../../../../../GitHub/ADA_Project/Watches_Images_Processed"
+dir_path = "./Watches_Images"
 
 # Create an empty DataFrame with columns for the image filename, the grayscale histogram features, the color
 # histogram features, and the texture features
