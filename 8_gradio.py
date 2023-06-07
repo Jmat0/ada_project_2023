@@ -28,7 +28,7 @@ def image_analysis(image_array, type_of_suggestions):
     # Convert the image to RGB mode
     rgb_img = myImage.convert('RGB')
 
-    file_path = os.path.join("../../../../../GitHub/ADA_Project/Watches_Images", "../Image_test.png")
+    file_path = os.path.join("./watches_images", "Image_test.png")
     rgb_img.save(file_path)
     # Convert the image to RGB mode
     rgb_img = rgb_img.convert('RGB')
@@ -179,7 +179,7 @@ def image_analysis(image_array, type_of_suggestions):
 
     # Save the new dataset to a CSV file
     new_dataset.to_csv('8b_merged_df_gradio.csv', index=False)
-    df = pd.read_csv('../8b_merged_df_gradio.csv')
+    df = pd.read_csv('8b_merged_df_gradio.csv')
 
     ################################################ Standardization of features values
 
@@ -211,7 +211,7 @@ def image_analysis(image_array, type_of_suggestions):
     ################################################ KNN
 
     # Read the CSV file into a pandas DataFrame
-    data = pd.read_csv('../temp1.csv')
+    data = pd.read_csv('temp1.csv')
     # Change the Brand names to be equal to the name saved under the classes vector
     # Mapping of brand names
     brand_mapping = {
@@ -293,7 +293,7 @@ def image_analysis(image_array, type_of_suggestions):
     closest_watch_ids = [reference_names[idx] for idx in neighbor_indices]
 
     # Get the corresponding image paths for the closest watch IDs
-    image_folder = "Watches_Images_No_Category"
+    image_folder = "watches_images_no_category"
     image_paths = [os.path.join(image_folder, f"{watch_id}.jpg") for watch_id in closest_watch_ids[:3]]
 
     # Load the images and resize them

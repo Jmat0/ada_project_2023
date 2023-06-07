@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/4b_data_with_images.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/5_data_with_images.csv">
           <value>
             <Attribute>
