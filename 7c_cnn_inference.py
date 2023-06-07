@@ -12,8 +12,8 @@ import pathlib
 import glob
 import cv2
 
-train_path='/Users/marcbourleau/Desktop/training'
-pred_path= '/Users/marcbourleau/Desktop/prediction' # we make the prediction with the new model "best_checkpoint.model" (that has the best accuracy)
+train_path='./training'
+pred_path= './prediction' # we make the prediction with the new model "best_checkpoint.model" (that has the best accuracy)
 
 # CNN Network
 class ConvNet(nn.Module):
@@ -122,7 +122,7 @@ print(pred_dict)
 
 
 # Path to the folder containing the ground truth labels
-truth_folder = '/Users/marcbourleau/Desktop/truth_folder/'
+truth_folder = './truth_folder/'
 
 # Initialize variables
 total_images = 0
