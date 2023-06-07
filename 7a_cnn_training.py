@@ -26,7 +26,7 @@ transformer = transforms.Compose([
 ])
 
 # Path to the original image folder
-original_folder = './watches_images_cnn' #contains all the images
+original_folder = './watches_images_cnn' #contains all the images; warning, the folder is empty after operation
 
 # Path to the destination folders for validation, testing, and training
 prediction_folder = './prediction'
