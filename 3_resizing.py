@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # Define the path to your images directory
-images_dir = './Watches_Images'
+images_dir = './watches_images'
 
 # Define the desired image size for preprocessing
 image_size = (350, 350)
