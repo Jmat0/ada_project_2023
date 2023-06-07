@@ -13,7 +13,7 @@ char_df['image_file'] = char_df['Reference'].apply(lambda x: f"{x}.jpg")
 char_df['image_file_processed'] = 'processed_' + char_df['image_file']
 
 # Define the directory where the image files are stored
-image_dir = './Watches_Images'
+image_dir = './watches_images'
 
 # Create a dictionary to map the characteristics to the images
 char_to_image = {}
