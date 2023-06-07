@@ -3,13 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="/2_cleaned_watch_text_def.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="/4b_data_with_images.csv">
           <value>
             <Attribute>
@@ -24,20 +17,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/8a_df_gray.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/8c_df_texture.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="/Copy_safe_to_work_Lawrence/2_cleaned_watch_text_def copie.csv">
           <value>
             <Attribute>
@@ -46,27 +25,6 @@
           </value>
         </entry>
         <entry key="/Copy_safe_to_work_Lawrence/2_cleaned_watch_text_def copy.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Copy_safe_to_work_Lawrence/5_data_with_images copie.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Copy_safe_to_work_Lawrence/data_with_images.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/Copy_safe_to_work_Lawrence/df_all_features.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
