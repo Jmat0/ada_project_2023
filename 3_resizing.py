@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # Define the path to your images directory
-images_dir = '../../../../../GitHub/ADA_Project/Watches_Images'
+images_dir = '~/Documents/GitHub/ADA_Project/Watches_Images'
 
 # Define the desired image size for preprocessing
 image_size = (350, 350)

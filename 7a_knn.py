@@ -4,7 +4,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 
 # Read the CSV file into a pandas DataFrame
-data = pd.read_csv('../../../../Documents/GitHub/ADA_Project/8a_df_gray.csv')
+data = pd.read_csv('../../../../GitHub/ADA_Project/5b_df_gray.csv')
 
 # Extract the gray features and reference names into separate arrays
 gray_features = data['gray_features'].apply(lambda x: np.fromstring(x[1:-1], sep=' ')).values
