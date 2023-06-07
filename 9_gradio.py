@@ -178,8 +178,8 @@ def image_analysis(image_array, type_of_suggestions):
     new_dataset = pd.concat([existing_dataset, merged_df], ignore_index=True)
 
     # Save the new dataset to a CSV file
-    new_dataset.to_csv('8b_merged_df_gradio.csv', index=False)
-    df = pd.read_csv('8b_merged_df_gradio.csv')
+    new_dataset.to_csv('9b_merged_df_gradio.csv', index=False)
+    df = pd.read_csv('9b_merged_df_gradio.csv')
 
     ################################################ Standardization of features values
 
