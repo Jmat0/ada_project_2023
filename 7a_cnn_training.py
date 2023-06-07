@@ -26,12 +26,12 @@ transformer = transforms.Compose([
 ])
 
 # Path to the original image folder
-original_folder = '/Users/marcbourleau/Desktop/watches_images/' #contains all the images
+original_folder = './Watches_Images/' #contains all the images
 
 # Path to the destination folders for validation, testing, and training
-prediction_folder = '/Users/marcbourleau/Desktop/prediction/'
-testing_folder = '/Users/marcbourleau/Desktop/testing/'
-training_folder = '/Users/marcbourleau/Desktop/training/'
+prediction_folder = './prediction/'
+testing_folder = './testing/'
+training_folder = './training/'
 
 # Create the destination folders if they don't exist
 os.makedirs(prediction_folder, exist_ok=True)
@@ -100,8 +100,8 @@ print(f"Number of images in training folder: {training_image_count}")
 
 
 #Path for training and testing directory
-train_path='/Users/marcbourleau/Desktop/training'
-test_path='/Users/marcbourleau/Desktop/testing'
+train_path='./training'
+test_path='./testing'
 
 train_loader=DataLoader(
     torchvision.datasets.ImageFolder(train_path,transform=transformer),
@@ -257,5 +257,5 @@ for epoch in range(num_epochs):
 #The first hyperparameters that we used was batch size 256 and number of epochs = 10. The maximum accuracy on the testing was of 82% and on the prediction 46%.
 # Second testing: batch size 64, numb of epochs = 10. Max accuracy of 82% on the testing and prediction 77%
 # Third testing: batch size 32, numb of epochs = 10. Max accuracy of 82% on the testing and prediction 66%
-# 4th testing: batch size 64, numb of epochs = 15. Max accuracry of 82% on the testing and prediction 68%
+# 4th testing: batch size 64, numb of epochs = 15. Max accuracy of 82% on the testing and prediction 68%
 # 5th testing: batch size 32, num of epochs = 15. Max accuracy of 82% on the testing and prediction 77% keep this
