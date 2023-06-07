@@ -32,3 +32,53 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1686143033397	geckodriver	INFO	Listening on 127.0.0.1:64472
+1686143033869	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/hw/m8dmpnn50k57k_90n_drc2x00000gn/T/rust_mozprofileulA2lU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686143034389	Marionette	INFO	Marionette enabled
+1686143034463	Marionette	INFO	Listening on port 64499
+Read port: 64499
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:64473
+1686143034549	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:64473/devtools/browser/9a2c8a1b-4fc1-4307-a9ec-61a263dba73b
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 79: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Grx7oFpFltq8b-fsl1vgPlw_mz8UVJv5RtxGiy-srTQ.js line 2 > eval line 4168 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Grx7oFpFltq8b-fsl1vgPlw_mz8UVJv5RtxGiy-srTQ.js line 2 > eval line 2395 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 79: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1686143090798	geckodriver	INFO	Listening on 127.0.0.1:64952
+1686143090802	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/hw/m8dmpnn50k57k_90n_drc2x00000gn/T/rust_mozprofilertXP6N"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686143091129	Marionette	INFO	Marionette enabled
+1686143091188	Marionette	INFO	Listening on port 64956
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 64956
+WebDriver BiDi listening on ws://127.0.0.1:64953
+1686143091285	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:64953/devtools/browser/b113cf67-0b20-48c4-a5b3-f75f0b73dfeb
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 79: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Grx7oFpFltq8b-fsl1vgPlw_mz8UVJv5RtxGiy-srTQ.js line 2 > eval line 7314 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Grx7oFpFltq8b-fsl1vgPlw_mz8UVJv5RtxGiy-srTQ.js line 2 > eval line 4092 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: ({})
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
