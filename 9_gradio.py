@@ -33,13 +33,15 @@ def image_analysis(image_array, type_of_suggestions):
     # Convert the image to RGB mode
     rgb_img = rgb_img.convert('RGB')
 
+    ################ checking for device################
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
     # CNN Network
     class ConvNet(nn.Module):
-        def _init_(self, num_classes=20):
-            super(ConvNet, self)._init_()
+        def __init__(self, num_classes=20):
+            super(ConvNet, self).__init__()
 
-            self.conv1 = nn.Conv2d(in_channels=3, out_channels=12, kernel_size=3, stride=1,
-                                   padding=1)  # let's try with 12 channels as our data set is quite small
+            self.conv1 = nn.Conv2d(in_channels=3, out_channels=12, kernel_size=3, stride=1, padding=1)
             # Shape= (256,12,350,350)
             self.bn1 = nn.BatchNorm2d(
                 num_features=12)  # same number as number of channels; number of different filters or feature maps produced by that layer
@@ -92,7 +94,7 @@ def image_analysis(image_array, type_of_suggestions):
             return output
 
     checkpoint = torch.load('7b_best_checkpoint.model')
-    model = ConvNet(num_classes=20)
+    model=ConvNet(num_classes=20).to(device)
     model.load_state_dict(checkpoint)
     model.eval()  # to set dropout and batch normalisation
     # Transforms
@@ -162,7 +164,7 @@ def image_analysis(image_array, type_of_suggestions):
     merged_df = pd.merge(merged_df, df_texture, on="filename")
 
     # Load the existing dataset
-    # Rename the variable "imagefile" to "Reference" in 9d_merged_df_copy
+    # Rename the variable "image file" to "Reference" in 9d_merged_df_copy
     data_change = pd.read_csv("5b_merged_df.csv")
     data2 = pd.read_csv("4b_data_with_images.csv")
     data2.rename(columns={"Reference": "filename"}, inplace=True)
@@ -171,15 +173,15 @@ def image_analysis(image_array, type_of_suggestions):
     merge = data_change.merge(data2[["filename", "Brand"]], on="filename", how="left")
 
     # Load the existing dataset
-    merge.to_csv('merge.csv')
-    existing_dataset = pd.read_csv('merge.csv')
+    merge.to_csv('9b_merged.csv')
+    existing_dataset = pd.read_csv('9b_merged.csv')
 
     # Concatenate the existing dataset and the newly created DataFrame
     new_dataset = pd.concat([existing_dataset, merged_df], ignore_index=True)
 
     # Save the new dataset to a CSV file
-    new_dataset.to_csv('9b_merged_df_gradio.csv', index=False)
-    df = pd.read_csv('9b_merged_df_gradio.csv')
+    new_dataset.to_csv('9c_final_merge.csv', index=False)
+    df = pd.read_csv('9c_final_merge.csv')
 
     ################################################ Standardization of features values
 
@@ -206,12 +208,12 @@ def image_analysis(image_array, type_of_suggestions):
     df['color_features'] = color_features_scaled
     df['texture_features'] = texture_features_scaled
 
-    df.to_csv('temp1.csv')
+    df.to_csv('9d_temp_df.csv')
 
     ################################################ KNN
 
     # Read the CSV file into a pandas DataFrame
-    data = pd.read_csv('temp1.csv')
+    data = pd.read_csv('9d_temp_df.csv')
     # Change the Brand names to be equal to the name saved under the classes vector
     # Mapping of brand names
     brand_mapping = {
@@ -244,7 +246,7 @@ def image_analysis(image_array, type_of_suggestions):
         # Filter the data based on the brand value
         filtered_data = data[data['Brand'] == brand]
         # Save the filtered data to a CSV file
-        filtered_data.to_csv('filtered_data.csv', index=False)             #MARC????????
+        filtered_data.to_csv('9e_filtered_data.csv', index=False)             #MARC????????
 
         # Extract the gray features and reference names into separate arrays
         gray_features = filtered_data['gray_features'].apply(lambda x: np.fromstring(x[1:-1], sep=' '))
@@ -300,8 +302,6 @@ def image_analysis(image_array, type_of_suggestions):
     watch_images = [Image.open(image_path).resize((450, 450), Image.ANTIALIAS) for image_path in image_paths]
 
     return closest_watch_ids, watch_images[0], watch_images[1], watch_images[2]
-
-
 
 
 

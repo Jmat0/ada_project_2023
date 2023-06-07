@@ -87,6 +87,9 @@ transformer=transforms.Compose([
 root=pathlib.Path(train_path)
 classes=sorted([j.name.split('/')[-1] for j in root.iterdir()])
 
+# Remove '.DS_Store' from classes list
+classes = [c for c in classes if c != '.DS_Store']
+
 print(classes)
 
 # prediction function
@@ -111,6 +114,7 @@ def prediction(img_path, transformer):
     return pred # output is the category name
 
 images_path=glob.glob(pred_path+'/*.jpg')
+
 print(images_path) # all the validation images
 pred_dict = {}
 
@@ -122,7 +126,7 @@ print(pred_dict)
 
 
 # Path to the folder containing the ground truth labels
-truth_folder = './truth_folder'
+truth_folder = './watches_images'
 
 # Initialize variables
 total_images = 0
