@@ -1,5 +1,4 @@
 # Load libraries
-#Load libraries
 import os
 import numpy as np
 import torch
@@ -115,7 +114,8 @@ test_loader=DataLoader(
 # Categories
 root=pathlib.Path(train_path)
 classes=sorted([j.name.split('/')[-1] for j in root.iterdir()])
-
+# Remove '.DS_Store' from classes list
+classes = [c for c in classes if c != '.DS_Store']
 print(classes)
 
 
@@ -239,7 +239,7 @@ for epoch in range(num_epochs):
 
     # Save the best model
     if test_accuracy > best_accuracy:
-        torch.save(model.state_dict(), '7b_best_checkpoint.model')
+        torch.save(model.state_dict(), './7b_best_checkpoint.model')
         best_accuracy = test_accuracy
 
 
